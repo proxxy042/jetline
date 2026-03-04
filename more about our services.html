@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Our Services</title>
+<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+     <Link rel="stylesheet" href="Fontawesome/css/all.css"></Link>
+</head>
+<body>
+          <!-- Font Awesome CDN for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+<nav class="bg-gray-800 text-white border-b p-4 px-6">
+  <div class="flex items-center justify-between">
+    <!-- Logo -->
+    <div>
+      <h1 class="text-2xl font-bold">JLCS</h1>
+      <p class="text-sm font-medium">Jetline Logistics & Courier Service</p>
+    </div>
+
+    <!-- Desktop Nav Links -->
+    <div class="hidden md:flex items-center gap-4">
+      <a href="personalproject.html" class="text-red-500 hover:underline">Home</a>
+      <a href="shipping.html" class="text-red-500 hover:underline">Shipping</a>
+      <a href="About.html" class="text-red-500 hover:underline">About</a>
+      <!-- Search -->
+      <div class="flex items-center gap-2">
+        <i class="fa-solid fa-search text-white"></i>
+        <input
+          type="text"
+          placeholder="Choose your location"
+          class="bg-transparent border border-white rounded px-2 py-1 text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-red-400"
+        />
+      </div>
+    </div>
+
+    <!-- Mobile Hamburger -->
+    <button id="menuToggle" class="md:hidden text-white text-2xl">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobileMenu" class="hidden flex-col mt-4 gap-4 md:hidden">
+    <a href="personalproject.html" class="text-red-500">Home</a>
+    <a href="shipping.html" class="text-red-500">Shipping</a>
+    <a href="About.html" class="text-red-500">About</a>
+    <div class="flex items-center gap-2">
+      <i class="fa-solid fa-search text-white"></i>
+      <input
+        type="text"
+        placeholder="Choose your location"
+        class="bg-transparent border border-white rounded px-2 py-1 text-white placeholder-white
+         focus:outline-none focus:ring-2 focus:ring-red-400"
+      />
+    </div>
+  </div>
+
+  <!-- Simple JavaScript to toggle mobile menu -->
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</nav> 
+                <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-blue-600 to-sky-400 text-white py-16 text-center px-6">
+    <h1 class="text-4xl font-bold mb-4">Learn More About Our Services</h1>
+    <p class="text-lg max-w-2xl mx-auto">Jetline Logistics offers comprehensive solutions tailored to meet the diverse needs of businesses globally. Explore what sets us apart.</p>
+  </section>
+
+                <!-- Service Overview -->
+  <section class="py-12 px-6 max-w-6xl mx-auto">
+    <h2 class="text-2xl font-semibold text-center mb-10">Our Core Services</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-white shadow-lg p-6 rounded-xl">
+        <h3 class="font-bold text-xl mb-2">Freight Forwarding</h3>
+        <p>Efficient management of air, sea, and land cargo across global routes, ensuring safe, timely delivery.</p>
+      </div>
+      <div class="bg-white shadow-lg p-6 rounded-xl">
+        <h3 class="font-bold text-xl mb-2">Warehousing & Fulfillment</h3>
+        <p>Modern storage facilities, real-time inventory tracking, and fast order processing to power your supply chain.</p>
+      </div>
+      <div class="bg-white shadow-lg p-6 rounded-xl">
+        <h3 class="font-bold text-xl mb-2">Last-Mile Delivery</h3>
+        <p>Reliable doorstep deliveries that connect your goods directly with end consumers, nationwide or locally.</p>
+      </div>
+      <div class="bg-white shadow-lg p-6 rounded-xl">
+        <h3 class="font-bold text-xl mb-2">Air & Sea Cargo</h3>
+        <p>Fast international air freight and cost-effective sea freight with complete customs handling support.</p>
+      </div>
+      <div class="bg-white shadow-lg p-6 rounded-xl">
+        <h3 class="font-bold text-xl mb-2">Customs Clearance</h3>
+        <p>Streamlined import/export processing, ensuring your goods cross borders without delays or penalties.</p>
+      </div>
+      <div class="bg-white shadow-lg p-6 rounded-xl">
+        <h3 class="font-bold text-xl mb-2">Cold Chain Logistics</h3>
+        <p>Specialized transportation and warehousing for temperature-sensitive goods like pharmaceuticals and food.</p>
+      </div>
+    </div>
+  </section>
+
+            <!-- Industry-Specific Solutions -->
+  <section class="bg-gray-100 py-12 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-2xl font-semibold mb-6">Industry-Specific Solutions</h2>
+      <p class="mb-6 max-w-3xl mx-auto">From e-commerce to industrial manufacturing, we adapt our logistics services to match your industry’s exact needs.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <span class="bg-white border rounded-full px-4 py-2">E-commerce</span>
+        <span class="bg-white border rounded-full px-4 py-2">Pharmaceutical</span>
+        <span class="bg-white border rounded-full px-4 py-2">Automotive</span>
+        <span class="bg-white border rounded-full px-4 py-2">Retail</span>
+        <span class="bg-white border rounded-full px-4 py-2">Industrial Machinery</span>
+        <span class="bg-white border rounded-full px-4 py-2">Agriculture</span>
+      </div>
+    </div>
+  </section>
+
+            <!-- Technology Section -->
+  <section class="py-12 px-6 max-w-5xl mx-auto text-center">
+    <h2 class="text-2xl font-semibold mb-6">Technology & Tracking</h2>
+    <p class="max-w-3xl mx-auto mb-8">We use the latest logistics technologies to ensure visibility, speed, and precision throughout your shipment’s journey.</p>
+    <div class="grid md:grid-cols-3 gap-6 text-left">
+      <div>
+        <h4 class="font-semibold text-lg mb-2">Real-Time Tracking</h4>
+        <p>Live location updates and status alerts via dashboard or SMS.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-lg mb-2">Inventory Management</h4>
+        <p>Full control and visibility of your warehouse stock with automated systems.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-lg mb-2">API Integration</h4>
+        <p>Seamless integration with your store, ERP, or CRM for automated logistics.</p>
+      </div>
+    </div>
+  </section>
+
+                <!-- Competitive Advantage -->
+  <section class="bg-white py-12 px-6 max-w-6xl mx-auto text-center">
+    <h2 class="text-2xl font-semibold mb-6">Why Choose Jetline?</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="p-4">
+        <h3 class="text-xl font-bold text-blue-600">24/7 Support</h3>
+        <p>Always-available help via phone, email, or chat.</p>
+      </div>
+      <div class="p-4">
+        <h3 class="text-xl font-bold text-blue-600">Global Network</h3>
+        <p>Offices and partners in 60+ countries worldwide.</p>
+      </div>
+      <div class="p-4">
+        <h3 class="text-xl font-bold text-blue-600">High Delivery Rate</h3>
+        <p>98% on-time delivery success across regions.</p>
+      </div>
+      <div class="p-4">
+        <h3 class="text-xl font-bold text-blue-600">Secured Shipping</h3>
+        <p>Every shipment is tracked and insured.</p>
+      </div>
+    </div>
+  </section>
+
+                    <!-- Call to Action -->
+  <section class="bg-blue-600 text-white py-12 px-6 text-center">
+    <h2 class="text-3xl font-bold mb-4">Need Help Finding the Right Service?</h2>
+    <p class="mb-6">Let our logistics experts guide you through the best shipping solution for your business.</p>
+    <a href="#contact" class="inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition">
+      Contact Us
+    </a>
+  </section>
+
+
+                <!--footer section-->
+    <div class="border border-gray-300 bg-gray-200"> 
+    </div>
+    <div class="grid md:grid-cols-3 lg:grid-cols-3 lg:flex md:flex items-center justify-between
+    gap-20 p-5 px-10">
+    <div>
+         <H2>JLCS</H2>
+           <P>We embrace creativity and continuous improvement,</p> 
+            <p>constantly seeking new and innovative approaches to optimize logistics processes,</p>
+             <p>enhance efficiency, and adapt
+             to evolving market dynamics.
+            </P>
+        </div>
+
+       <div class="grid grid-cols-1">
+    <h2>Quick Links</h2>
+    <ul class="space-y-2 hover:underline">
+        <li><a href="personalproject.html">Home</a></li>
+        <li><a href="customer service.html">Customer Service</a></li>
+        <li><a href="About.html">About</a></li>
+         <li><a href="contact & support.html">Contact & support</a></li>
+    </ul>
+</div>
+        <div>
+            <h2 class="text-gray-700 text-2xl font-bold">Contact Us</h2>
+            <a href="#">
+               <i class="fas fa-phone"></i>
+               <p>+1 918 480 5810</p>
+            
+               <i class="fa-brands fa-google text-1xl text-green-500"></i>
+               <span>jlcserviceworldwide@gmail.com</span>
+                </a>
+            </div>
+        </div>
+    <div class="flex items-center justify-center">
+      <p class="border-b">2025 © - all rights reserved</p>
+    </div>
+</body>
+</html>

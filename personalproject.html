@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jetline logistics</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+     <Link rel="stylesheet" href="Fontawesome/css/all.css"></Link>
+</head>
+<body>
+          <!-- Font Awesome CDN for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+<nav class="bg-gray-800 text-white border-b p-4 px-6">
+  <div class="flex items-center justify-between">
+    <!-- Logo -->
+    <div>
+      <h1 class="text-2xl font-bold">JLCS</h1>
+      <p class="text-sm font-medium">Jetline Logistics & Courier Service</p>
+    </div>
+
+            <!-- Desktop Nav Links -->
+    <div class="hidden md:flex items-center gap-4">
+      <a href="personalproject.html" class="text-red-500 hover:underline">Home</a>
+      <a href="shipping.html" class="text-red-500 hover:underline">Shipping</a>
+      <a href="About.html" class="text-red-500 hover:underline">About</a>
+              <!-- Search -->
+      <div class="flex items-center gap-2">
+        <i class="fa-solid fa-search text-white"></i>
+        <input
+          type="text"
+          placeholder="Choose your location"
+          class="bg-transparent border border-white rounded px-2 py-1 text-white placeholder-white 
+          focus:outline-none focus:ring-2 focus:ring-red-400"/>
+      </div>
+    </div> 
+
+           <!-- Mobile Hamburger -->
+    <button id="menuToggle" class="md:hidden text-white text-2xl">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+
+           <!-- Mobile Dropdown Menu -->
+  <div id="mobileMenu" class="hidden flex-col mt-4 gap-4 md:hidden">
+    <a href="personalproject.html" class="text-red-500">Home</a>
+    <a href="shipping.html" class="text-red-500">Shipping</a>
+    <a href="About.html" class="text-red-500">About</a>
+    <div class="flex items-center gap-2">
+      <i class="fa-solid fa-search text-white"></i>
+      <input
+        type="text"
+        placeholder="Choose your location"
+        class="bg-transparent border border-white rounded px-2 py-1 text-white placeholder-white
+         focus:outline-none focus:ring-2 focus:ring-red-400"
+      />
+    </div>
+  </div>
+
+  <!-- Simple JavaScript to toggle mobile menu -->
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</nav>
+                      <!-- body section -->
+        <div class="h-[40vh] min-h-dvh bg-./[url('images/ship-container.webp')] bg-cover">
+            <div class="grid md:flex lg:flex items-center justify-center gap-2">
+    <h2 class="text-3xl text-red-900 font-bold">Track Your Shipment</h2>
+      <select id="LocationSelector" class="border px-2 py-2 rounded-lg w-40">
+    <option>Locations</option>
+    <option>United Kingdomm</option>
+    <option>Ireland</option>
+    <option>Denmark</option>
+    <option>United State Of America</option>
+    <option>Italy</option>
+    <option>Poland</option>
+    <option>Russia</option>
+    <option>Ukraine</option>
+    <option>Japan</option>
+    <option>Thailand</option>
+    <option>Vietnam</option>
+    <option>China</option>
+    <option>spain</option>
+   </select>
+    <button id="SubmitBtn" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Submit</button>
+       </div>
+                    <!-- Input + Button -->
+<div class="flex gap-2 flex-col sm:flex-row items-center justify-center mt-6">
+  <input id="trackingId" type="text" placeholder="Enter Tracking Number" class="border px-4 py-2 rounded-lg w-72" />
+  <button onclick="trackPackage()" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Track</button>
+</div>
+
+                      <!-- Result -->
+<div id="trackingResult" class="mt-4 text-center text-gray-700"></div>
+
+<script>
+  function trackPackage() {
+    const input = document.getElementById("trackingId").value.trim();
+    const result = document.getElementById("trackingResult");
+
+                    // Simulated database
+    const dummyData = {
+      "JET123": "In transit - Arriving Georgia hub",
+      "JET456": "Delivered - Signed by Heintsman",
+      "JET789": "Out for delivery - ETA: Today 16:00"
+    };
+
+    if (dummyData[input]) {
+      result.innerHTML = `<p>Status: <strong>${dummyData[input]}</strong></p>`;
+    } else {
+      result.innerHTML = `<p class="text-red-500">Tracking number not found.</p>`;
+    }
+  }
+</script>
+</div>
+   
+     <section class="min-h-dvh bg-gradient-to-b from-sky-300 to-white bg-lime-500">
+        <div class="grid items-center justify-center gap-8 gap-y-8">
+            <h2 class="text-2xl">Document and Parcel Shipping</h2>
+            <p class="text-2xl">For All Shippers</p>
+            <a href="more about our services.html" class="border border-purple-900 text-2xl rounded-lg">Learn more about our service</a>
+        </div>
+
+        <div class="grid items-center justify-center gap-5 py-20">
+            <h2>LOGISTICS SOLUTIONS</h2>
+            <p>
+                Less than truck load: this is a deferred economy service (72 hours & above) for parcels of 5kg and above.
+            </p>
+            <p>
+                Truck load: this service is designed for full truck load as the name implies. A vehicle is dedicated for this transaction
+            </p>
+            <p>
+                HORSE (Home and Office Relocation): specialize in relocating office and homes, involves the loading,
+                 offloading of items at the new site.
+            </p>
+            <p>
+                Integrated Warehousing/ Distribution: integrated warehouse services at a desired location.
+            </p>
+            <p>
+                Inventory Management: either it is your warehouse or ours; we take care of the day to day inventory management
+            </p>
+            <p>
+                Collateral Warehousing: warehousing.
+            </p>
+        </div>
+     </section>
+    <!--form section ends-->
+
+    <!---->
+    <section class="bg-gray-700">
+                <div class="grid md:grid-cols-4 lg:grid-cols-4">
+                <a href="find location.html" class="text-red-700 text-2xl border p-5 px-8 hover:bg-white transition-all">Find location</a>
+                <a href="ship now.html" class="text-red-700 text-2xl border p-5 px-8 hover:bg-white transition-all">Ship Now</a>
+                <a href="open account.html" class="text-red-700 text-2xl border p-5 px-8 hover:bg-white transition-all">Open Acount</a>
+                <a href="login.html" class="text-red-700 text-2xl border p-5 px-8 hover:bg-white transition-all">Login</a>
+                </div>
+        </section>
+       
+              <!--footer section-->
+    <div class="border border-gray-300 bg-gray-200"> 
+    </div>
+    <div class="grid md:grid-cols-3 lg:grid-cols-3 lg:flex md:flex items-center justify-between
+    gap-20 p-5 px-10">
+    <div>
+         <H2>JLCS</H2>
+            <P>We embrace creativity and continuous improvement,</p> 
+            <p>constantly seeking new and innovative approaches to optimize logistics processes,</p>
+             <p>enhance efficiency, and adapt
+             to evolving market dynamics.
+            </P>
+        </div>
+
+       <div class="grid grid-cols-1">
+    <h2>Quick Links</h2>
+    <ul class="space-y-2 hover:underline">
+        <li><a href="personalproject.html">Home</a></li>
+        <li><a href="customer service.html">Customer Service</a></li>
+        <li><a href="About.html">About</a></li>
+         <li><a href="contact & support.html">Contact & support</a></li>
+    </ul>
+</div>
+        <div>
+            <h2 class="text-gray-700 text-2xl font-bold">Contact Us</h2>
+            <a href="#">
+               <i class="fas fa-phone"></i>
+               <p>+1 918 480 5810</p>
+            
+               <i class="fa-brands fa-google text-1xl text-green-500"></i>
+               <span>jlcserviceworldwide@gmail.com</span>
+                </a>
+            </div>
+        </div>
+    <div class="flex items-center justify-center">
+      <p class="border-b">2025 © - all rights reserved</p>
+    </div>
+    </body>
+    </html>

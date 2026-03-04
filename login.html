@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="Fontawesome/css/all.css">
+</head>
+<body>
+     <!-- Font Awesome CDN for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+<nav class="bg-gray-800 text-white border-b p-4 px-6">
+  <div class="flex items-center justify-between">
+    <!-- Logo -->
+    <div>
+      <h1 class="text-2xl font-bold">JLCS</h1>
+      <p class="text-sm font-medium">Jetline Logistics & Courier Service</p>
+    </div>
+
+    <!-- Desktop Nav Links -->
+    <div class="hidden md:flex items-center gap-4">
+      <a href="personalproject.html" class="text-red-500 hover:underline">Home</a>
+      <a href="#" class="text-red-500 hover:underline">Shipping</a>
+      <a href="About.html" class="text-red-500 hover:underline">About</a>
+      <!-- Search -->
+      <div class="flex items-center gap-2">
+        <i class="fa-solid fa-search text-white"></i>
+        <input
+          type="text"
+          placeholder="Choose your location"
+          class="bg-transparent border border-white rounded px-2 py-1 text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-red-400"
+        />
+      </div>
+    </div>
+
+    <!-- Mobile Hamburger -->
+    <button id="menuToggle" class="md:hidden text-white text-2xl">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobileMenu" class="hidden flex-col mt-4 gap-4 md:hidden">
+    <a href="personalproject.html" class="text-red-500">Home</a>
+    <a href="#" class="text-red-500">Shipping</a>
+    <a href="About.html" class="text-red-500">About</a>
+    <div class="flex items-center gap-2">
+      <i class="fa-solid fa-search text-white"></i>
+      <input
+        type="text"
+        placeholder="Choose your location"
+        class="bg-transparent border border-white rounded px-2 py-1 text-white placeholder-white
+         focus:outline-none focus:ring-2 focus:ring-red-400"
+      />
+    </div>
+  </div>
+
+  <!-- Simple JavaScript to toggle mobile menu -->
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</nav>
+    <!--form sections starts-->
+    <section class="min-h-dvh bg-gradient-to-b from-sky-300 to-white flex items-center justify-center">
+        <div class="border py-10 px-8 grid gap-5 bg-gray-200 rounded-t-lg w-full max-w-sm shadow-md">
+             <h2 class="text-center text-xl font-semibold text-gray-700">Customer Login</h2>
+    
+                    <!-- Username Field -->
+    <div class="flex items-center border rounded-lg px-3 py-2 gap-2 bg-white">
+      <i class="fas fa-user text-gray-500"></i>
+      <input type="text" placeholder="Username" class="outline-none flex-1 bg-transparent" />
+    </div>
+
+                     <!-- Password Field -->
+    <div class="flex items-center border rounded-lg px-3 py-2 gap-2 bg-white">
+      <i class="fas fa-unlock-keyhole text-gray-500"></i>
+      <input type="password" placeholder="Enter your password" class="outline-none flex-1 bg-transparent" />
+    </div>
+
+    <div class="gap-4 flex">
+      <input type="radio"><a href="">Remember me</a>
+      <a href="">Forgotten Password?</a>
+    </div>
+
+                  <!-- Login Button -->
+    <button class="border bg-blue-400 p-2 rounded hover:bg-white hover:text-blue-500 transition-all">
+      Login
+    </button>
+    <div class="grid grid-cols-2 gap-2">
+    <p class="mb-6 text-gray-700">Don't have an account?</p>
+    <a href="open account.html" class="mb-6 text-gray-700">Sign Up</a>
+  </div>
+  </div>
+ </section>
+                    <!--form sections ends-->
+
+                    <!--forter sections starts-->
+     <div class="border border-gray-300 bg-gray-200"> 
+    </div>
+    <div class="grid md:grid-cols-3 lg:grid-cols-3 lg:flex md:flex items-center justify-between
+    gap-20 p-5 px-10">
+    <div>
+         <H2>JLCS</H2>
+           <P>We embrace creativity and continuous improvement,</p> 
+            <p>constantly seeking new and innovative approaches to optimize logistics processes,</p>
+             <p>enhance efficiency, and adapt
+             to evolving market dynamics.
+            </P>
+        </div>
+
+       <div class="grid grid-cols-1">
+    <h2>Quick Links</h2>
+    <ul class="space-y-2 hover:underline">
+        <li><a href="personalproject.html">Home</a></li>
+        <li><a href="customer service.html">Customer Service</a></li>
+        <li><a href="About.html">About</a></li>
+    </ul>
+</div>
+        <div>
+            <h2 class="text-gray-700 text-2xl font-bold">Contact Us</h2>
+            <a href="#">
+               <i class="fas fa-phone"></i>
+               <p>+1 918 480 5810</p>
+            
+               <i class="fa-brands fa-google text-1xl text-green-500"></i>
+               <span>jlcserviceworldwide@gmail.com</span>
+                </a>
+            </div>
+        </div>
+    <div class="flex items-center justify-center">
+      <p class="border-b">2025 © - all rights reserved</p>
+    </div>
+    
+    <!--footer sections ends-->
+</body>
+</html>

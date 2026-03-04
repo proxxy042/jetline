@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+     <Link rel="stylesheet" href="Fontawesome/css/all.css"></Link>
+</head>
+<body>
+    <!-- Font Awesome CDN for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+<nav class="bg-gray-800 text-white border-b p-4 px-6">
+  <div class="flex items-center justify-between">
+    <!-- Logo -->
+    <div>
+      <h1 class="text-2xl font-bold">JLCS</h1>
+      <p class="text-sm font-medium">Jetline Logistics & Courier Service</p>
+    </div>
+
+    <!-- Desktop Nav Links -->
+    <div class="hidden md:flex items-center gap-4">
+      <a href="personalproject.html" class="text-red-500 hover:underline">Home</a>
+      <a href="#" class="text-red-500 hover:underline">Shipping</a>
+      <a href="About.html" class="text-red-500 hover:underline">About</a>
+      <!-- Search -->
+      <div class="flex items-center gap-2">
+        <i class="fa-solid fa-search text-white"></i>
+        <input
+          type="text"
+          placeholder="Choose your location"
+          class="bg-transparent border border-white rounded px-2 py-1 text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-red-400"
+        />
+      </div>
+    </div>
+
+    <!-- Mobile Hamburger -->
+    <button id="menuToggle" class="md:hidden text-white text-2xl">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobileMenu" class="hidden flex-col mt-4 gap-4 md:hidden">
+    <a href="personalproject.html" class="text-red-500">Home</a>
+    <a href="#" class="text-red-500">Shipping</a>
+    <a href="About.html" class="text-red-500">About</a>
+    <div class="flex items-center gap-2">
+      <i class="fa-solid fa-search text-white"></i>
+      <input
+        type="text"
+        placeholder="Choose your location"
+        class="bg-transparent border border-white rounded px-2 py-1 text-white placeholder-white
+         focus:outline-none focus:ring-2 focus:ring-red-400"
+      />
+    </div>
+  </div>
+
+  <!-- Simple JavaScript to toggle mobile menu -->
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</nav>
+
+                    <!--About Section -->
+           <div class="min-h-dvh bg-gradient-to-b from-sky-300 to-white shadow-2xl py-10 px-4 sm:px-6 lg:px-12">
+  <div class="max-w-4xl mx-auto text-center space-y-4">
+    <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800">At Jetline Logistic Company</h1>
+    <p class="text-gray-700 text-base sm:text-lg">
+      We deliver more than just cargo—we deliver confidence, speed, and reliability across the globe.
+    </p>
+    <p class="text-gray-700 text-base sm:text-lg">
+      As a trusted name in the logistics industry, we specialize in providing comprehensive,
+      end-to-end transportation and supply chain solutions to clients worldwide.
+    </p>
+    <p class="text-gray-700 text-base sm:text-lg">
+      With a strong presence across key international markets, Jetline Logistic Company offers a full range of services,
+      including freight forwarding, air and sea cargo, warehousing, customs clearance, and last-mile delivery.
+    </p>
+    <p class="text-gray-700 text-base sm:text-lg">
+      Our global network and advanced logistics technology enable us to streamline complex operations,
+      ensuring your goods arrive safely and on time—every time.
+    </p>
+    <p class="text-gray-700 text-base sm:text-lg">
+      Backed by a team of experienced professionals and a commitment to excellence,
+      we pride ourselves on being a reliable logistics partner for businesses of all sizes.
+    </p>
+    <p class="text-gray-700 text-base sm:text-lg">
+      Whether you're shipping across continents or across town, Jetline is your one-stop solution for seamless,
+      efficient, and cost-effective logistics.
+    </p>
+    <p class="text-gray-800 font-semibold text-lg sm:text-xl">
+      At Jetline Logistic Company, your success moves with us.
+    </p>
+  </div>
+</div>
+                              <!--footer section-->
+         <div class="border border-gray-300 bg-gray-200"> 
+    </div>
+    <div class="grid md:grid-cols-3 lg:grid-cols-3 lg:flex md:flex items-center justify-between
+    gap-20 p-5 px-10">
+    <div>
+         <H2>JLCS</H2>
+            <P>We embrace creativity and continuous improvement,</p> 
+            <p>constantly seeking new and innovative approaches to optimize logistics processes,</p>
+             <p>enhance efficiency, and adapt
+             to evolving market dynamics.
+            </P>
+        </div>
+
+       <div class="grid grid-cols-1">
+    <h2>Quick Links</h2>
+    <ul class="space-y-2 hover:underline">
+        <li><a href="personalproject.html">Home</a></li>
+        <li><a href="customer service.html">Customer Service</a></li>
+        <li><a href="About.html">About</a></li>
+    </ul>
+</div>
+        <div>
+            <h2 class="text-gray-700 text-2xl font-bold">Contact Us</h2>
+            <a href="#">
+               <i class="fas fa-phone"></i>
+               <p>+1 918 480 5810</p>
+            
+               <i class="fa-brands fa-google text-1xl text-green-500"></i>
+               <span>jlcserviceworldwide@gmail.com</span>
+                </a>
+            </div>
+        </div>
+    <div class="flex items-center justify-center">
+      <p class="border-b">2025 © - all rights reserved</p>
+    </div>
+   </body>
+</html>

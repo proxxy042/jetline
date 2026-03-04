@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+     <Link rel="stylesheet" href="Fontawesome/css/all.css"></Link>
+</head>
+<body>
+     <!-- Font Awesome CDN for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+<nav class="bg-gray-800 text-white border-b p-4 px-6">
+  <div class="flex items-center justify-between">
+    <!-- Logo -->
+    <div>
+      <h1 class="text-2xl font-bold">JLCS</h1>
+      <p class="text-sm font-medium">Jetline Logistics & Courier Service</p>
+    </div>
+
+    <!-- Desktop Nav Links -->
+    <div class="hidden md:flex items-center gap-4">
+      <a href="personalproject.html" class="text-red-500 hover:underline">Home</a>
+      <a href="#" class="text-red-500 hover:underline">Shipping</a>
+      <a href="About.html" class="text-red-500 hover:underline">About</a>
+      <!-- Search -->
+      <div class="flex items-center gap-2">
+        <i class="fa-solid fa-search text-white"></i>
+        <input
+          type="text"
+          placeholder="Choose your location"
+          class="bg-transparent border border-white rounded px-2 py-1 text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-red-400"
+        />
+      </div>
+    </div>
+
+    <!-- Mobile Hamburger -->
+    <button id="menuToggle" class="md:hidden text-white text-2xl">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobileMenu" class="hidden flex-col mt-4 gap-4 md:hidden">
+    <a href="personalproject.html" class="text-red-500">Home</a>
+    <a href="#" class="text-red-500">Shipping</a>
+    <a href="About.html" class="text-red-500">About</a>
+    <div class="flex items-center gap-2">
+      <i class="fa-solid fa-search text-white"></i>
+      <input
+        type="text"
+        placeholder="Choose your location"
+        class="bg-transparent border border-white rounded px-2 py-1 text-white placeholder-white
+         focus:outline-none focus:ring-2 focus:ring-red-400"
+      />
+    </div>
+  </div>
+
+  <!-- Simple JavaScript to toggle mobile menu -->
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</nav>
+         <section class="min-h-dvh bg-gradient-to-b from-sky-300 to-white bg-lime-500">
+            <div class="flex flex-col items-center justify-center p-4">
+     <div class="w-full max-w-xl bg-white rounded-2xl shadow-xl p-6">
+    <h1 class="text-2xl font-bold text-gray-800 mb-4 text-center">Find a Location</h1>
+    
+    <form id="locationForm" class="flex gap-2">
+      <input 
+        type="text" 
+        placeholder="Enter a location..." 
+        id="locationInput"
+        class="flex-1 border border-gray-300 rounded-xl px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+        required
+      >
+      <button 
+        type="submit"
+        class="bg-blue-600 text-white px-5 py-2 rounded-xl hover:bg-blue-700 transition duration-200"
+      >
+        Search
+      </button>
+    </form>
+
+    <div id="locationResult" class="mt-6 text-gray-700">
+      <!-- Location result will appear here -->
+    </div>
+
+    <!-- Optional: Placeholder map box -->
+    <div id="map" class="mt-6 h-64 w-full bg-gray-200 rounded-xl flex items-center justify-center text-gray-500">
+      Map Placeholder
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('locationForm');
+    const result = document.getElementById('locationResult');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const input = document.getElementById('locationInput').value;
+      result.innerHTML = `You searched for: <strong>${input}</strong>`;
+      
+    });
+  </script>
+
+        <!--footer section-->
+     <div class="border border-gray-300 bg-gray-200"> 
+    </div>
+    <div class="grid md:grid-cols-3 lg:grid-cols-3 lg:flex md:flex items-center justify-between
+    gap-20 p-5 px-10">
+    <div>
+         <H2>JLCS</H2>
+           <P>We embrace creativity and continuous improvement,</p> 
+            <p>constantly seeking new and innovative approaches to optimize logistics processes,</p>
+             <p>enhance efficiency, and adapt
+             to evolving market dynamics.
+            </P>
+        </div>
+
+       <div class="grid grid-cols-1">
+    <h2>Quick Links</h2>
+    <ul class="space-y-2 hover:underline">
+        <li><a href="personalproject.html">Home</a></li>
+        <li><a href="customer service.html">Customer Service</a></li>
+        <li><a href="About.html">About</a></li>
+    </ul>
+</div>
+        <div>
+            <h2 class="text-gray-700 text-2xl font-bold">Contact Us</h2>
+            <a href="#">
+               <i class="fas fa-phone"></i>
+               <p>+1 918 480 5810</p>
+            
+               <i class="fa-brands fa-google text-1xl text-green-500"></i>
+               <span>jlcserviceworldwide@gmail.com</span>
+                </a>
+            </div>
+        </div>
+    <div class="flex items-center justify-center">
+      <p class="border-b">2025 © - all rights reserved</p>
+    </div>
+</body>
+</html>
