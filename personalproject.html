@@ -43,9 +43,14 @@
 
            <!-- Mobile Dropdown Menu -->
   <div id="mobileMenu" class="hidden flex-col mt-4 gap-4 md:hidden">
-    <a href="personalproject.html" class="text-red-500">Home</a>
-    <a href="shipping.html" class="text-red-500">Shipping</a>
-    <a href="About.html" class="text-red-500">About</a>
+    <div class="w-full bg-white shadow-md rounded-lg p-3 space-y-2"> <a href="personalproject.html" 
+      class="block w-full text-red-500 border border-gray-200 rounded-md px-4 py-3 text-lg hover:bg-red-500
+       hover:text-white transition"> Home </a> 
+       <a href="shipping.html" class="block w-full text-red-500 border border-gray-200 rounded-md px-4 py-3 
+       text-lg hover:bg-red-500 hover:text-white transition"> Shipping </a>
+        <a href="About.html" class="block w-full text-red-500 border border-gray-200 rounded-md px-4 py-3 text-lg
+         hover:bg-red-500 hover:text-white transition"> About </a>
+         </div>
     <div class="flex items-center gap-2">
       <i class="fa-solid fa-search text-white"></i>
       <input
@@ -69,31 +74,34 @@
 </nav>
                       <!-- body section -->
         <div class="h-[40vh] min-h-dvh bg-[url('images/ship-container.webp')] bg-cover">
-            <div class="grid md:flex lg:flex items-center justify-center gap-2">
-    <h2 class="text-3xl text-red-900 font-bold">Track Your Shipment</h2>
-      <select id="LocationSelector" class="border px-2 py-2 rounded-lg w-40">
-    <option>Locations</option>
-    <option>United Kingdomm</option>
-    <option>Ireland</option>
-    <option>Denmark</option>
-    <option>United State Of America</option>
-    <option>Italy</option>
-    <option>Poland</option>
-    <option>Russia</option>
-    <option>Ukraine</option>
-    <option>Japan</option>
-    <option>Thailand</option>
-    <option>Vietnam</option>
-    <option>China</option>
-    <option>spain</option>
-   </select>
-    <button id="SubmitBtn" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Submit</button>
-       </div>
-                    <!-- Input + Button -->
-<div class="flex gap-2 flex-col sm:flex-row items-center justify-center mt-6">
-  <input id="trackingId" type="text" placeholder="Enter Tracking Number" class="border px-4 py-2 rounded-lg w-72" />
-  <button onclick="trackPackage()" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Track</button>
-</div>
+         <div class="min-h-screen flex items-center justify-center">
+             <div class="text-center space-y-6"> <div class="flex flex-col md:flex-row items-center justify-center gap-4"> 
+            <h2 class="text-3xl text-red-900 font-bold">Track Your Shipment</h2> <select id="LocationSelector" 
+            class="border px-3 py-2 rounded-lg w-44"> 
+            <option>Locations</option>
+            <option>United Kingdom</option>
+            <option>Ireland</option>
+            <option>Denmark</option>
+            <option>United States Of America</option>
+            <option>Italy</option> 
+            <option>Poland</option>
+            <option>Russia</option>
+            <option>Ukraine</option>
+            <option>Japan</option>
+            <option>Thailand</option> 
+            <option>Vietnam</option> 
+            <option>China</option>
+            <option>Spain</option> 
+                </select> 
+                <button id="SubmitBtn" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700"> Submit </button> 
+            </div>
+                     <!-- Input + Track Button -->
+             <div class="flex flex-col sm:flex-row items-center justify-center gap-3"> 
+                <input id="trackingId" type="text" placeholder="Enter Tracking Number" class="border px-4 py-2 rounded-lg w-72" />
+                 <button onclick="trackPackage()" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700"> Track </button>
+                 </div>
+                 </div>
+                 </div>    
 
                       <!-- Result -->
 <div id="trackingResult" class="mt-4 text-center text-gray-700"></div>
@@ -201,3 +209,4 @@
     </body>
 
     </html>
+
